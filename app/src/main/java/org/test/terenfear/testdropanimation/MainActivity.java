@@ -36,15 +36,15 @@ public class MainActivity extends AppCompatActivity {
                 .setDuration(3000)
                 .setObjectScale(1.9f)
                 .setRowLength(20)
-                .setARGBColors(0.5f, 1f, 1f, 0f)
+                .setARGBColors(0.9f, 0f, 0f, 0f)
                 .setResourceIds(RESOURCES_ID_ARRAY)
                 .setStartListener(type -> {
                     Log.d(TAG, "anim start: " + type.name());
-                    mDropItemsView.setARGBColors(0.5f, 0f, 1f, 1f);
+                    //mDropItemsView.setARGBColors(0.5f, 0f, 1f, 1f);
                 })
                 .setEndListener(type -> {
                     Log.d(TAG, "anim end: " + type.name());
-                    mDropItemsView.setARGBColors(0.5f, 1f, 1f, 0f);
+                    //mDropItemsView.setARGBColors(0.5f, 1f, 1f, 0f);
                 });
 
         findViewById(R.id.vBtnStop).setOnClickListener(view -> mDropItemsView.stopAnimation());
